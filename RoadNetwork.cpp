@@ -14,43 +14,42 @@ RoadNetwork* RoadNetwork::Instance(){
 	if(!m_pInstance){
 		m_pInstance = new RoadNetwork;
 
-		Location * a = new Place("Huissen", 5, 6);
-				Location * b = new Place("Arnhem", 15, 7);
-				Location * c = new Place("Duiven", 9, 12);
-				Location * d = new Place("Westervoort", 9, 20);
-				Location * e = new Junction("Velperbroek", 10, 10);
-				Location * f = new Junction("Ede", 15, 15);
-				m_pInstance->locations.push_back(a);
-				m_pInstance->locations.push_back(b);
-				m_pInstance->locations.push_back(c);
-				m_pInstance->locations.push_back(d);
-				m_pInstance->locations.push_back(e);
-				m_pInstance->locations.push_back(f);
+		Location * a = new Place("Huissen", 50, 10);
+		Location * b = new Place("Arnhem", 15, 7);
+		Location * c = new Place("Duiven", 9, 12);
+		Location * d = new Place("Westervoort", 9, 20);
+		Location * e = new Junction("Velperbroek", 10, 10);
+		Location * f = new Junction("Ede", 15, 15);
+		m_pInstance->locations.push_back(a);
+		m_pInstance->locations.push_back(b);
+		m_pInstance->locations.push_back(c);
+		m_pInstance->locations.push_back(d);
+		m_pInstance->locations.push_back(e);
+		m_pInstance->locations.push_back(f);
 
-				ConnectionPiece * g = new ConnectionPiece(8,*e,*a);
-				ConnectionPiece * h = new ConnectionPiece(4,*e,*b);
-				ConnectionPiece * i = new ConnectionPiece(4,*e,*c);
-				ConnectionPiece * j = new ConnectionPiece(7,*e,*d);
-				ConnectionPiece * k = new ConnectionPiece(3,*e,*f);
+		ConnectionPiece * g = new ConnectionPiece(8,*e,*a);
+		ConnectionPiece * h = new ConnectionPiece(4,*e,*b);
+		ConnectionPiece * i = new ConnectionPiece(5,*e,*c);
+		ConnectionPiece * j = new ConnectionPiece(7,*e,*d);
+		ConnectionPiece * k = new ConnectionPiece(3,*e,*f);
 
-				ConnectionPiece * l = new ConnectionPiece(8,*a,*e);
-				ConnectionPiece * m = new ConnectionPiece(4,*b,*e);
-				ConnectionPiece * n = new ConnectionPiece(4,*c,*e);
-				ConnectionPiece * o = new ConnectionPiece(7,*d,*e);
-				ConnectionPiece * p = new ConnectionPiece(3,*f,*e);
+		ConnectionPiece * l = new ConnectionPiece(8,*a,*e);
+		ConnectionPiece * m = new ConnectionPiece(4,*b,*e);
+		ConnectionPiece * n = new ConnectionPiece(4,*c,*e);
+		ConnectionPiece * o = new ConnectionPiece(7,*d,*e);
+		ConnectionPiece * p = new ConnectionPiece(3,*f,*e);
 
-				m_pInstance->connectionpieces.push_back(g);
-				m_pInstance->connectionpieces.push_back(h);
-				m_pInstance->connectionpieces.push_back(i);
-				m_pInstance->connectionpieces.push_back(j);
-				m_pInstance->connectionpieces.push_back(k);
+		m_pInstance->connectionpieces.push_back(g);
+		m_pInstance->connectionpieces.push_back(h);
+		m_pInstance->connectionpieces.push_back(i);
+		m_pInstance->connectionpieces.push_back(j);
+		m_pInstance->connectionpieces.push_back(k);
 
-				m_pInstance->connectionpieces.push_back(l);
-				m_pInstance->connectionpieces.push_back(m);
-				m_pInstance->connectionpieces.push_back(n);
-				m_pInstance->connectionpieces.push_back(o);
-				m_pInstance->connectionpieces.push_back(p);
-				std::cout << locations.size() << std::endl;
+		m_pInstance->connectionpieces.push_back(l);
+		m_pInstance->connectionpieces.push_back(m);
+		m_pInstance->connectionpieces.push_back(n);
+		m_pInstance->connectionpieces.push_back(o);
+		m_pInstance->connectionpieces.push_back(p);
 	}
 	return m_pInstance;
 }

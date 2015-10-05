@@ -7,8 +7,8 @@
 #include "ConnectionPiece.hpp"
 
 ConnectionPiece::ConnectionPiece():
-	travelTime(0),
-	length(0)
+	travelTime(21),
+	length(21)
 {
 }
 

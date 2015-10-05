@@ -18,13 +18,19 @@ Location::Location(const Location& aLocation):
 {
 }
 
+void Location::operator =(const Location& aLocation)
+{
+	Longitude = aLocation.Longitude;
+	Latitude = aLocation.Latitude;
+}
+
 Location::~Location()
 {
 }
 
 Location::Location(double A, double B):
-		Longitude(A),
-		Latitude(B)
+	Longitude(A),
+	Latitude(B)
 {
 }
 

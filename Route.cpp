@@ -26,9 +26,9 @@ void Route::calculateRoute()
 			break;
 		}
 	}
-
+	std::cout << routes.size() << std::endl;
 	for(auto route : routes){
-		std::cout << route.getTravelTime() << std::endl;
+		std::cout << "Verbindingsstukken reistijd :" << route.getTravelTime() << std::endl;
 	}
 }
 

@@ -14,6 +14,7 @@ public:
 	Location(double A, double B );
 	Location(const Location& aLocation);
 
+	void operator=(const Location& aLocation);
 	bool operator==(Location& aLocation) const;
 
 	virtual ~Location();

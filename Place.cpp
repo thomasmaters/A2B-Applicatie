@@ -13,6 +13,7 @@ Place::Place():
 }
 
 Place::Place(const Place& aPlace):
+	Location(aPlace),
 	name(aPlace.name)
 {
 }
@@ -26,7 +27,7 @@ Place::Place(std::string aName, double A, double B):
 Place& Place::operator=(const Place& aPlace)
 {
 	if(this != &aPlace){
-
+		Location::operator=(aPlace);
 		name = aPlace.name;
 	}
 	return *this;

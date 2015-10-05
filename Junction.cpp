@@ -7,11 +7,13 @@
 #include "Junction.hpp"
 
 Junction::Junction():
+	Location(0,0),
 	name("")
 {
 }
 
 Junction::Junction(const Junction& aJunction):
+	Location(aJunction),
 	name(aJunction.name)
 {
 }
