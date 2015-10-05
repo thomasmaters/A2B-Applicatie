@@ -13,8 +13,8 @@ Location::Location():
 }
 
 Location::Location(const Location& aLocation):
-	Longitude(0),
-	Latitude(0)
+	Longitude(aLocation.Longitude),
+	Latitude(aLocation.Latitude)
 {
 }
 
@@ -26,4 +26,9 @@ Location::Location(double A, double B):
 		Longitude(A),
 		Latitude(B)
 {
+}
+
+bool Location::operator ==(Location& aLocation) const
+{
+	return (Longitude == aLocation.Longitude && Latitude == aLocation.Latitude);
 }

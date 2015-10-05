@@ -13,13 +13,15 @@ ConnectionPiece::ConnectionPiece():
 }
 
 ConnectionPiece::ConnectionPiece(const ConnectionPiece& aConnectionPiece):
-		travelTime(0),
-		length(0)
+		travelTime(aConnectionPiece.travelTime),
+		length(aConnectionPiece.length),
+		startPoint(aConnectionPiece.startPoint),
+		endPoint(aConnectionPiece.endPoint)
 {
 }
 
 ConnectionPiece::ConnectionPiece(long length, Location A, Location B):
-		travelTime(0),
+		travelTime(length * 4),
 		length(length),
 		startPoint(A),
 		endPoint(B)
@@ -32,5 +34,5 @@ ConnectionPiece::~ConnectionPiece()
 
 long ConnectionPiece::getTravelTime()
 {
-	return 0;
+	return travelTime;
 }

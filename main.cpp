@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	RoadNetwork::Instance();
+	RoadNetwork* instance = RoadNetwork::Instance();
 	AppManager app;
 	std::string input;
 	std::cin >> input;
@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		std::cout<< "Voer uw eindpunt in!" << std::endl;
 		std::cin>>B;
 
-		//app.inputRoute(RoadNetwork::getLocationFromName(A),RoadNetwork::getLocationFromName(B));
+		app.inputRoute(instance->getLocationFromName(A),instance->getLocationFromName(B));
 	}
 }
 

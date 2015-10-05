@@ -12,9 +12,24 @@ void Route::inputRoute(Location A, Location B)
 	endPoint = B;
 }
 
-std::vector<ConnectionPiece> Route::calculateRoute(Location A, Location B)
+void Route::calculateRoute()
 {
-	return std::vector<ConnectionPiece>();
+	for(auto connectie : RoadNetwork::connectionpieces){
+		if(connectie->getStartPoint() == startPoint){
+			routes.push_back(*connectie);
+			break;
+		}
+	}
+	for(auto connectie : RoadNetwork::connectionpieces){
+		if(connectie->getEndPoint() == endPoint){
+			routes.push_back(*connectie);
+			break;
+		}
+	}
+
+	for(auto route : routes){
+		std::cout << route.getTravelTime() << std::endl;
+	}
 }
 
 Route::Route():

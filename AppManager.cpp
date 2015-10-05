@@ -34,5 +34,5 @@ AppManager::~AppManager()
 
 void AppManager::inputRoute(Location A, Location B)
 {
-	route.calculateRoute(A,B);
+	route.calculateRoute();
 }

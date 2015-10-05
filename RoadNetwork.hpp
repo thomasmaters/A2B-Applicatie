@@ -10,13 +10,15 @@
 #include "Location.hpp"
 #include "Place.hpp"
 #include "Junction.hpp"
+#include "ConnectionPiece.hpp"
 
 class RoadNetwork
 {
 public:
 	static RoadNetwork* Instance();
 	static Location getLocationFromName(const std::string& A);
-	static std::vector<Location*> network;
+	static std::vector<Location*> locations;
+	static std::vector<ConnectionPiece*> connectionpieces;
 private:
 	RoadNetwork(){};
 	RoadNetwork(const RoadNetwork& aRoadNetwork){};

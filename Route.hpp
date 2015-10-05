@@ -7,6 +7,7 @@
 #include <iostream>
 #include <assert.h>
 
+#include "RoadNetwork.hpp"
 #include "ConnectionPiece.hpp"
 #include "Location.hpp"
 
@@ -20,7 +21,7 @@ public:
 
 	void inputRoute(Location A, Location B);
 
-	std::vector<ConnectionPiece> calculateRoute(Location A, Location B);
+	void calculateRoute();
 private:
 	long travelTime;
 	std::vector<ConnectionPiece> routes;

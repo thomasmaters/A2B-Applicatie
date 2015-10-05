@@ -24,5 +24,14 @@ public:
 	virtual ~ConnectionPiece();
 	long getTravelTime();
 
+	const Location& getEndPoint() const
+	{
+		return endPoint;
+	}
+
+	const Location& getStartPoint() const
+	{
+		return startPoint;
+	}
 };
 #endif
