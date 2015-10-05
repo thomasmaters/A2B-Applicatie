@@ -7,11 +7,19 @@
 #include <iostream>
 #include <assert.h>
 
+#include "Location.hpp"
+#include "Place.hpp"
+
 class RoadNetwork
 {
 public:
 	RoadNetwork();
 	RoadNetwork(const RoadNetwork& aRoadNetwork);
+
+	Location getLocationFromName(const std::string& A);
+
 	virtual ~RoadNetwork();
+private:
+	std::vector<Location*> network;
 };
 #endif

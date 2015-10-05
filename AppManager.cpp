@@ -5,14 +5,19 @@
 #include <assert.h>
 
 #include "AppManager.hpp"
+#include "Route.hpp"
 
 
 void AppManager::showRouteView()
 {
+	std::cout<< "U bevind zig nu in het route invul scherm!" << std::endl;
+
 }
 
 void AppManager::startRoute()
 {
+	Route route();
+	showRouteView();
 }
 
 AppManager::AppManager()
@@ -27,6 +32,6 @@ AppManager::~AppManager()
 {
 }
 
-void AppManager::inputRoute(Location A, Location B)
+void AppManager::inputRoute(std::string A, std::string B)
 {
 }

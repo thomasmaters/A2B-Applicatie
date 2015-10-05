@@ -11,6 +11,7 @@ class Location
 {
 public:
 	Location();
+	Location(double A, double B );
 	Location(const Location& aLocation);
 	virtual ~Location();
 private:

@@ -6,12 +6,30 @@
 
 #include "Place.hpp"
 
-Place::Place()
+Place::Place():
+	Location(0,0),
+	name("")
 {
 }
 
-Place::Place(const Place& aPlace)
+Place::Place(const Place& aPlace):
+	name(aPlace.name)
 {
+}
+
+Place::Place(std::string aName, double A, double B):
+	Location(A,B),
+	name(aName)
+{
+}
+
+Place& Place::operator=(const Place& aPlace)
+{
+	if(this != &aPlace){
+
+		name = aPlace.name;
+	}
+	return *this;
 }
 
 Place::~Place()

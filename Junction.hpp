@@ -11,6 +11,7 @@ class Junction
 {
 public:
 	Junction();
+	Junction(std::string aName);
 	Junction(const Junction& aJunction);
 	virtual ~Junction();
 private:

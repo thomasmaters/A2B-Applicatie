@@ -7,19 +7,12 @@
 #include <iostream>
 #include <assert.h>
 
-#include "Location.hpp"
 #include "ConnectionPiece.hpp"
+#include "Location.hpp"
 
 
 class Route
 {
-private:
-	long travelTime;
-
-	std::vector<Route> routes;
-
-
-public:
 public:
 	Route();
 	Route(const Route& aRoute);
@@ -28,6 +21,9 @@ public:
 	void inputRoute(Location A, Location B);
 
 	std::vector<ConnectionPiece> calculateRoute(Location A, Location B);
+private:
+	long travelTime;
 
+	std::vector<ConnectionPiece> routes;
 };
 #endif

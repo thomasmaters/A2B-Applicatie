@@ -22,7 +22,7 @@ ConnectionPiece::~ConnectionPiece()
 {
 }
 
-long ConnectionPiece::getTravelTIme()
+long ConnectionPiece::getTravelTime()
 {
 	return 0;
 }

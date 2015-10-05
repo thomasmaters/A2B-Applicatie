@@ -18,7 +18,7 @@ public:
 	ConnectionPiece();
 	ConnectionPiece(const ConnectionPiece& aConnectionPiece);
 	virtual ~ConnectionPiece();
-	long getTravelTIme();
+	long getTravelTime();
 
 };
 #endif

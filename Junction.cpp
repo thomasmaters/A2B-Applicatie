@@ -6,11 +6,18 @@
 
 #include "Junction.hpp"
 
-Junction::Junction()
+Junction::Junction():
+	name("")
 {
 }
 
-Junction::Junction(const Junction& aJunction)
+Junction::Junction(const Junction& aJunction):
+	name(aJunction.name)
+{
+}
+
+Junction::Junction(std::string aName):
+	name(aName)
 {
 }
 
