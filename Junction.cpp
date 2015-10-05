@@ -21,6 +21,11 @@ Junction::Junction(std::string aName):
 {
 }
 
+std::string Junction::getName()
+{
+	return name;
+}
+
 Junction::~Junction()
 {
 }

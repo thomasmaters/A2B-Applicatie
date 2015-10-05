@@ -9,6 +9,7 @@
 
 #include "Location.hpp"
 #include "Place.hpp"
+#include "Junction.hpp"
 
 class RoadNetwork
 {

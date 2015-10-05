@@ -6,7 +6,7 @@
 
 #include "AppManager.hpp"
 #include "Route.hpp"
-
+Route route;
 
 void AppManager::showRouteView()
 {
@@ -16,7 +16,7 @@ void AppManager::showRouteView()
 
 void AppManager::startRoute()
 {
-	Route route();
+	Route route;
 	showRouteView();
 }
 
@@ -32,6 +32,7 @@ AppManager::~AppManager()
 {
 }
 
-void AppManager::inputRoute(std::string A, std::string B)
+void AppManager::inputRoute(Location A, Location B)
 {
+	route.calculateRoute(A,B);
 }

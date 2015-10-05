@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	RoadNetwork roadNetwork;
+	RoadNetwork network;
 	AppManager app;
 	std::string input;
 	std::cin >> input;
@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		std::cout<< "Voer uw eindpunt in!" << std::endl;
 		std::cin>>B;
 
-		app.inputRoute(A,B);
+		app.inputRoute(network.getLocationFromName(A),network.getLocationFromName(B));
 	}
 }
 

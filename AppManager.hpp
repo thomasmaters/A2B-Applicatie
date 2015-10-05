@@ -20,7 +20,7 @@ public:
 
 	void startRoute();
 
-	void inputRoute(std::string A, std::string B);
+	void inputRoute(Location A, Location B);
 
 };
 #endif
