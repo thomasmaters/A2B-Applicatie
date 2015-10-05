@@ -14,13 +14,14 @@
 class RoadNetwork
 {
 public:
-	RoadNetwork();
-	RoadNetwork(const RoadNetwork& aRoadNetwork);
-
-	Location getLocationFromName(const std::string& A);
-
-	virtual ~RoadNetwork();
+	static RoadNetwork* Instance();
+	static Location getLocationFromName(const std::string& A);
+	static std::vector<Location*> network;
 private:
-	std::vector<Location*> network;
+	RoadNetwork(){};
+	RoadNetwork(const RoadNetwork& aRoadNetwork){};
+	static RoadNetwork* m_pInstance;
+
+
 };
 #endif

@@ -20,8 +20,8 @@ std::vector<ConnectionPiece> Route::calculateRoute(Location A, Location B)
 Route::Route():
 		travelTime(0),
 		routes(std::vector<ConnectionPiece>()),
-		startPoint(nullptr),
-		endPoint(nullptr)
+		startPoint(),
+		endPoint()
 {
 }
 

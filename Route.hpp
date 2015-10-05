@@ -23,8 +23,9 @@ public:
 	std::vector<ConnectionPiece> calculateRoute(Location A, Location B);
 private:
 	long travelTime;
+	std::vector<ConnectionPiece> routes;
 	Location startPoint;
 	Location endPoint;
-	std::vector<ConnectionPiece> routes;
+
 };
 #endif
