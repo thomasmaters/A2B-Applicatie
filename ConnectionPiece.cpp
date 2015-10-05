@@ -18,6 +18,14 @@ ConnectionPiece::ConnectionPiece(const ConnectionPiece& aConnectionPiece):
 {
 }
 
+ConnectionPiece::ConnectionPiece(long length, Location A, Location B):
+		travelTime(0),
+		length(length),
+		startPoint(A),
+		endPoint(B)
+{
+}
+
 ConnectionPiece::~ConnectionPiece()
 {
 }

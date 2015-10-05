@@ -7,15 +7,19 @@
 #include <iostream>
 #include <assert.h>
 
+#include "Location.hpp"
+
 class ConnectionPiece
 {
 private:
 	long travelTime;
-
 	long length;
+	Location startPoint;
+	Location endPoint;
 
 public:
 	ConnectionPiece();
+	ConnectionPiece(long length,Location A, Location B);
 	ConnectionPiece(const ConnectionPiece& aConnectionPiece);
 	virtual ~ConnectionPiece();
 	long getTravelTime();

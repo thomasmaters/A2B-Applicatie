@@ -16,7 +16,8 @@ Junction::Junction(const Junction& aJunction):
 {
 }
 
-Junction::Junction(std::string aName):
+Junction::Junction(std::string aName, double A, double B):
+	Location(A,B),
 	name(aName)
 {
 }

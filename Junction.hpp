@@ -13,7 +13,7 @@ class Junction : public Location
 {
 public:
 	Junction();
-	Junction(std::string aName);
+	Junction(std::string aName, double A, double B);
 	Junction(const Junction& aJunction);
 
 	std::string getName();

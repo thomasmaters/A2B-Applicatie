@@ -8,6 +8,8 @@
 
 void Route::inputRoute(Location A, Location B)
 {
+	startPoint = A;
+	endPoint = B;
 }
 
 std::vector<ConnectionPiece> Route::calculateRoute(Location A, Location B)
@@ -17,13 +19,17 @@ std::vector<ConnectionPiece> Route::calculateRoute(Location A, Location B)
 
 Route::Route():
 		travelTime(0),
-		routes(std::vector<ConnectionPiece>())
+		routes(std::vector<ConnectionPiece>()),
+		startPoint(nullptr),
+		endPoint(nullptr)
 {
 }
 
 Route::Route(const Route& aRoute):
-		travelTime(0),
-		routes(std::vector<ConnectionPiece>())
+		travelTime(aRoute.travelTime),
+		routes(aRoute.routes),
+		startPoint(aRoute.startPoint),
+		endPoint(aRoute.endPoint)
 {
 }
 
