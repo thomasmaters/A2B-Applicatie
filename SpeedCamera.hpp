@@ -11,5 +11,9 @@
 
 class SpeedCamera : public SpeedTrap
 {
+public:
+	SpeedCamera();
+	SpeedCamera(const SpeedCamera& aSpeedCamera);
+	virtual ~SpeedCamera();
 };
 #endif

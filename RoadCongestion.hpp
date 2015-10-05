@@ -11,5 +11,9 @@
 
 class RoadCongestion : public Delays
 {
+public:
+	RoadCongestion();
+	RoadCongestion(const RoadCongestion& aRoadCongestion);
+	virtual ~RoadCongestion();
 };
 #endif

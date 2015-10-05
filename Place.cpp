@@ -6,4 +6,14 @@
 
 #include "Place.hpp"
 
+Place::Place()
+{
+}
 
+Place::Place(const Place& aPlace)
+{
+}
+
+Place::~Place()
+{
+}

@@ -11,8 +11,12 @@
 
 class Blockade : public TrafficData
 {
+public:
+	Blockade():TrafficData(),startTime(0),endTime(0){};
+	Blockade(const Blockade& aBlockade):TrafficData(),startTime(0),endTime(0){};
+	virtual ~Blockade();
 private:
-	long startTIme;
+	long startTime;
 
 	long endTime;
 

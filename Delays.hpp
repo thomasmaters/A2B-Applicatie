@@ -11,6 +11,18 @@
 
 class Delays : public TrafficData
 {
+public:
+	Delays():
+		TrafficData(),
+		delay(0),
+		startTime(0)
+	{};
+	Delays(const Delays& aDelays):
+		TrafficData(),
+		delay(0),
+		startTime(0)
+	{};
+	virtual ~Delays(){};
 private:
 	long delay;
 

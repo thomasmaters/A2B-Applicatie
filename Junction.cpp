@@ -6,4 +6,14 @@
 
 #include "Junction.hpp"
 
+Junction::Junction()
+{
+}
 
+Junction::Junction(const Junction& aJunction)
+{
+}
+
+Junction::~Junction()
+{
+}

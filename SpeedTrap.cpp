@@ -5,5 +5,3 @@
 #include <assert.h>
 
 #include "SpeedTrap.hpp"
-
-

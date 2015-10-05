@@ -10,6 +10,10 @@
 class TrafficData
 {
 public:
+	TrafficData();
+	TrafficData(const TrafficData& aTrafficData);
+	virtual ~TrafficData();
+
 	long getDelays();
 
 };

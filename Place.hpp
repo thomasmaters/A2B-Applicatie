@@ -7,12 +7,14 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.hpp"
-
 class Place
 {
+public:
+	Place();
+	Place(const Place& aPlace);
+	virtual ~Place();
 private:
-	java::lang::String name;
+	std::string name;
 
 };
 #endif

@@ -12,19 +12,14 @@
 class AppManager
 {
 public:
-	/**
-	 *  
-	 */
+	AppManager();
+	AppManager(const AppManager& aAppManager);
+	virtual ~AppManager();
+
 	void showRouteView();
 
-	/**
-	 *  
-	 */
 	void startRoute();
 
-	/**
-	 *  
-	 */
 	void inputRoute(Location A, Location B);
 
 };

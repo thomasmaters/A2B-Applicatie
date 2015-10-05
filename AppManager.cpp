@@ -15,6 +15,18 @@ void AppManager::startRoute()
 {
 }
 
+AppManager::AppManager()
+{
+}
+
+AppManager::AppManager(const AppManager& aAppManager)
+{
+}
+
+AppManager::~AppManager()
+{
+}
+
 void AppManager::inputRoute(Location A, Location B)
 {
 }

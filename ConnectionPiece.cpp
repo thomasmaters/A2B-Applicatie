@@ -6,8 +6,23 @@
 
 #include "ConnectionPiece.hpp"
 
+ConnectionPiece::ConnectionPiece():
+	travelTime(0),
+	length(0)
+{
+}
 
-java::lang::Long ConnectionPiece::getTravelTIme()
+ConnectionPiece::ConnectionPiece(const ConnectionPiece& aConnectionPiece):
+		travelTime(0),
+		length(0)
+{
+}
+
+ConnectionPiece::~ConnectionPiece()
+{
+}
+
+long ConnectionPiece::getTravelTIme()
 {
 	return 0;
 }

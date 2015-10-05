@@ -7,12 +7,14 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.hpp"
-
 class Junction
 {
+public:
+	Junction();
+	Junction(const Junction& aJunction);
+	virtual ~Junction();
 private:
-	java::lang::String name;
+	std::string name;
 
 };
 #endif

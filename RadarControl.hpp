@@ -11,5 +11,9 @@
 
 class RadarControl : public SpeedTrap
 {
+public:
+	RadarControl();
+	RadarControl(const RadarControl& aRadarControl);
+	virtual ~RadarControl();
 };
 #endif

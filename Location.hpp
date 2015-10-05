@@ -9,6 +9,10 @@
 
 class Location
 {
+public:
+	Location();
+	Location(const Location& aLocation);
+	virtual ~Location();
 private:
 	double Longitude;
 

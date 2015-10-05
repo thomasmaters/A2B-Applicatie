@@ -7,16 +7,18 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/String.hpp"
-
 class RegisteredUser
 {
+public:
+	RegisteredUser();
+	RegisteredUser(const RegisteredUser& aRegisteredUser);
+	virtual ~RegisteredUser();
 private:
-	java::lang::String Name;
+	std::string Name;
 
-	java::lang::String Adress;
+	std::string Adress;
 
-	java::lang::String City;
+	std::string City;
 
 };
 #endif

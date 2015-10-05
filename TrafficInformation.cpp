@@ -6,4 +6,14 @@
 
 #include "TrafficInformation.hpp"
 
+TrafficInformation::TrafficInformation()
+{
+}
 
+TrafficInformation::TrafficInformation(const TrafficInformation& aTrafficInformation)
+{
+}
+
+TrafficInformation::~TrafficInformation()
+{
+}

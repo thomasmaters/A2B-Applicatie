@@ -11,5 +11,9 @@
 
 class SpeedTrap : public TrafficData
 {
+public:
+	SpeedTrap(): TrafficData(){};
+	SpeedTrap(const SpeedTrap& aSpeedTrap): TrafficData(){};
+	virtual ~SpeedTrap() {};
 };
 #endif

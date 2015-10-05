@@ -7,18 +7,18 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/Long.hpp"
-
 class ConnectionPiece
 {
 private:
 	long travelTime;
 
-	long Length;
-
+	long length;
 
 public:
-	java::lang::Long getTravelTIme();
+	ConnectionPiece();
+	ConnectionPiece(const ConnectionPiece& aConnectionPiece);
+	virtual ~ConnectionPiece();
+	long getTravelTIme();
 
 };
 #endif

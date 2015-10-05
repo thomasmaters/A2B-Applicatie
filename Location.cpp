@@ -6,4 +6,14 @@
 
 #include "Location.hpp"
 
+Location::Location()
+{
+}
 
+Location::Location(const Location& aLocation)
+{
+}
+
+Location::~Location()
+{
+}

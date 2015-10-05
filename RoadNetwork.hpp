@@ -9,5 +9,9 @@
 
 class RoadNetwork
 {
+public:
+	RoadNetwork();
+	RoadNetwork(const RoadNetwork& aRoadNetwork);
+	virtual ~RoadNetwork();
 };
 #endif

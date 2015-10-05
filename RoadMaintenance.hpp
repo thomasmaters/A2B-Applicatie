@@ -11,5 +11,9 @@
 
 class RoadMaintenance : public Delays
 {
+public:
+	RoadMaintenance();
+	RoadMaintenance(const RoadMaintenance& aRoadMaintenance);
+	virtual ~RoadMaintenance();
 };
 #endif

@@ -8,26 +8,26 @@
 #include <assert.h>
 
 #include "Location.hpp"
-#include "java/util/Vector.hpp"
+#include "ConnectionPiece.hpp"
+
 
 class Route
 {
 private:
-	long / travelTime;
+	long travelTime;
 
-	java::util::Vector routes;
+	std::vector<Route> routes;
 
 
 public:
-	/**
-	 *  
-	 */
+public:
+	Route();
+	Route(const Route& aRoute);
+	virtual ~Route();
+
 	void inputRoute(Location A, Location B);
 
-	/**
-	 *  
-	 */
-	java::util::Vector calculateRoute(Location A, Location B);
+	std::vector<ConnectionPiece> calculateRoute(Location A, Location B);
 
 };
 #endif

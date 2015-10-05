@@ -6,4 +6,14 @@
 
 #include "RegisteredUser.hpp"
 
+RegisteredUser::RegisteredUser()
+{
+}
 
+RegisteredUser::RegisteredUser(const RegisteredUser& aRegisteredUser)
+{
+}
+
+RegisteredUser::~RegisteredUser()
+{
+}

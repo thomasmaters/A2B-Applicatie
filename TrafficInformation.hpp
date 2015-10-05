@@ -9,5 +9,9 @@
 
 class TrafficInformation
 {
+public:
+	TrafficInformation();
+	TrafficInformation(const TrafficInformation& aTrafficInformation);
+	virtual ~TrafficInformation();
 };
 #endif
