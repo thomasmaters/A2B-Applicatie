@@ -10,9 +10,9 @@
 class Location
 {
 private:
-	int Longitude;
+	double Longitude;
 
-	int Latitude;
+	double Latitude;
 
 };
 #endif

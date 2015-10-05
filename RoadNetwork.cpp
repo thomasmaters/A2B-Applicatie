@@ -4,10 +4,6 @@
 #include <iostream>
 #include <assert.h>
 
-#include "TrafficData.hpp"
+#include "RoadNetwork.hpp"
 
 
-long TrafficData::getDelays()
-{
-	return 0;
-}

@@ -7,12 +7,10 @@
 #include <iostream>
 #include <assert.h>
 
-#include "java/lang/Long.hpp"
-
 class TrafficData
 {
 public:
-	java::lang::Long getDelays();
+	long getDelays();
 
 };
 #endif

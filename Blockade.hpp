@@ -12,9 +12,9 @@
 class Blockade : public TrafficData
 {
 private:
-	int startTIme;
+	long startTIme;
 
-	int endTime;
+	long endTime;
 
 };
 #endif

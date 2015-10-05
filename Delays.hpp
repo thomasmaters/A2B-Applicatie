@@ -12,9 +12,9 @@
 class Delays : public TrafficData
 {
 private:
-	int delay;
+	long delay;
 
-	int startTime;
+	long startTime;
 
 };
 #endif

@@ -12,9 +12,9 @@
 class ConnectionPiece
 {
 private:
-	java::lang::Long travelTime;
+	long travelTime;
 
-	java::lang::Long Length;
+	long Length;
 
 
 public:
