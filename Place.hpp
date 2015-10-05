@@ -9,12 +9,14 @@
 
 #include "Location.hpp"
 
-class Place : Location
+class Place : public Location
 {
 public:
 	Place();
 	Place(std::string aName, double A, double B);
 	Place(const Place& aPlace);
+
+	std::string getName(){return name;}
 
 	Place& operator=(const Place& aPlace);
 	virtual ~Place();
