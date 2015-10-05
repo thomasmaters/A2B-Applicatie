@@ -56,14 +56,13 @@ RoadNetwork* RoadNetwork::Instance(){
 
 Location RoadNetwork::getLocationFromName(const std::string& A)
 {
-	std::cout << "Controleren Locaties" << std::endl;
 	for (auto locatie : locations)
 	{
 		if (Place* V = dynamic_cast<Place*>(locatie))
 		{
 			if (V->getName() == A)
 			{
-				std::cout<< "Plaats gevonden :" << V->getName() << std::endl;
+				//std::cout<< "Plaats gevonden :" << V->getName() << std::endl;
 				return *locatie;
 			}
 		}
@@ -71,7 +70,7 @@ Location RoadNetwork::getLocationFromName(const std::string& A)
 		{
 			if (V->getName() == A)
 			{
-				std::cout<< "Knooppunt gevonden :" << V->getName() << std::endl;
+				//std::cout<< "Knooppunt gevonden :" << V->getName() << std::endl;
 				return *locatie;
 			}
 		}
