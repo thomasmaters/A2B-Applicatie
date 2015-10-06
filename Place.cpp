@@ -7,7 +7,7 @@
 #include "Place.hpp"
 
 Place::Place():
-	Location(0,0),
+	Location("",0,0),
 	name("")
 {
 }
@@ -19,7 +19,7 @@ Place::Place(const Place& aPlace):
 }
 
 Place::Place(std::string aName, double A, double B):
-	Location(A,B),
+	Location(aName,A,B),
 	name(aName)
 {
 }

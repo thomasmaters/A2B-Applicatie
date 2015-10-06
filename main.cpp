@@ -12,6 +12,10 @@ int main(int argc, char **argv)
 {
 	RoadNetwork* instance = RoadNetwork::Instance();
 	AppManager app;
+
+	std::cout << "U bevind zig nu in het optie selecteer scherm." << std::endl;
+	std::cout << "U kunt kiezen uit de opties : 'route' en 'registeren'" << std::endl;
+
 	std::string input;
 	std::cin >> input;
 

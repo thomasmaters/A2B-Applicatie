@@ -11,14 +11,17 @@ class Location
 {
 public:
 	Location();
-	Location(double A, double B );
+	Location(std::string aName,double A, double B );
 	Location(const Location& aLocation);
+
+	std::string getName(){return name;};
 
 	void operator=(const Location& aLocation);
 	bool operator==(Location& aLocation) const;
 
 	virtual ~Location();
 private:
+	std::string name;
 	double Longitude;
 	double Latitude;
 

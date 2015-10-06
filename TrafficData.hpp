@@ -14,7 +14,6 @@ public:
 	TrafficData(const TrafficData& aTrafficData);
 	virtual ~TrafficData();
 
-	long getDelays();
-
+	long getDelay();
 };
 #endif

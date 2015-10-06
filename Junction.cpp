@@ -7,7 +7,7 @@
 #include "Junction.hpp"
 
 Junction::Junction():
-	Location(0,0),
+	Location("",0,0),
 	name("")
 {
 }
@@ -19,7 +19,7 @@ Junction::Junction(const Junction& aJunction):
 }
 
 Junction::Junction(std::string aName, double A, double B):
-	Location(A,B),
+	Location(aName,A,B),
 	name(aName)
 {
 }

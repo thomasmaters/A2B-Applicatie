@@ -8,6 +8,7 @@
 #include <assert.h>
 
 #include "Location.hpp"
+#include "TrafficData.hpp"
 
 class ConnectionPiece
 {
@@ -17,19 +18,23 @@ private:
 	Location startPoint;
 	Location endPoint;
 
+	std::vector<TrafficData> trafficData;
+
 public:
 	ConnectionPiece();
-	ConnectionPiece(long length,Location A, Location B);
+	ConnectionPiece(long length,Location A, Location B,std::vector<TrafficData> aTrafficData = std::vector<TrafficData>());
 	ConnectionPiece(const ConnectionPiece& aConnectionPiece);
 	virtual ~ConnectionPiece();
-	long getTravelTime();
 
-	const Location& getEndPoint() const
+	long getTravelTime();
+	long getAmountDelays();
+
+	Location getEndPoint()
 	{
 		return endPoint;
 	}
 
-	const Location& getStartPoint() const
+	Location getStartPoint()
 	{
 		return startPoint;
 	}

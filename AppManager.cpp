@@ -10,7 +10,7 @@ Route route;
 
 void AppManager::showRouteView()
 {
-	std::cout<< "U bevind zig nu in het route invul scherm!" << std::endl;
+	std::cout<< "U bevind zich nu in het route invul scherm!" << std::endl;
 
 }
 

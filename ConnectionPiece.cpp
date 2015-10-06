@@ -16,15 +16,17 @@ ConnectionPiece::ConnectionPiece(const ConnectionPiece& aConnectionPiece):
 		travelTime(aConnectionPiece.travelTime),
 		length(aConnectionPiece.length),
 		startPoint(aConnectionPiece.startPoint),
-		endPoint(aConnectionPiece.endPoint)
+		endPoint(aConnectionPiece.endPoint),
+		trafficData(aConnectionPiece.trafficData)
 {
 }
 
-ConnectionPiece::ConnectionPiece(long length, Location A, Location B):
+ConnectionPiece::ConnectionPiece(long length, Location A, Location B, std::vector<TrafficData> aTrafficData):
 		travelTime(length * 4),
 		length(length),
 		startPoint(A),
-		endPoint(B)
+		endPoint(B),
+		trafficData(aTrafficData)
 {
 }
 
@@ -32,7 +34,15 @@ ConnectionPiece::~ConnectionPiece()
 {
 }
 
+long ConnectionPiece::getAmountDelays(){
+	return trafficData.size();
+}
+
 long ConnectionPiece::getTravelTime()
 {
-	return travelTime;
+	long delay = 0;
+	for(auto a : trafficData){
+		delay += a.getDelay();
+	}
+	return travelTime + delay;
 }

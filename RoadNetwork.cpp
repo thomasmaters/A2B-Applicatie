@@ -27,16 +27,16 @@ RoadNetwork* RoadNetwork::Instance(){
 		m_pInstance->locations.push_back(e);
 		m_pInstance->locations.push_back(f);
 
-		ConnectionPiece * g = new ConnectionPiece(8,*e,*a);
-		ConnectionPiece * h = new ConnectionPiece(4,*e,*b);
-		ConnectionPiece * i = new ConnectionPiece(5,*e,*c);
+		ConnectionPiece * g = new ConnectionPiece(8,*e,*a,std::vector<TrafficData>({TrafficData()}));
+		ConnectionPiece * h = new ConnectionPiece(4,*e,*b,std::vector<TrafficData>({TrafficData()}));
+		ConnectionPiece * i = new ConnectionPiece(5,*e,*c,std::vector<TrafficData>({TrafficData()}));
 		ConnectionPiece * j = new ConnectionPiece(7,*e,*d);
 		ConnectionPiece * k = new ConnectionPiece(3,*e,*f);
 
 		ConnectionPiece * l = new ConnectionPiece(8,*a,*e);
 		ConnectionPiece * m = new ConnectionPiece(4,*b,*e);
-		ConnectionPiece * n = new ConnectionPiece(4,*c,*e);
-		ConnectionPiece * o = new ConnectionPiece(7,*d,*e);
+		ConnectionPiece * n = new ConnectionPiece(5,*c,*e);
+		ConnectionPiece * o = new ConnectionPiece(7,*d,*e,std::vector<TrafficData>({TrafficData()}));
 		ConnectionPiece * p = new ConnectionPiece(3,*f,*e);
 
 		m_pInstance->connectionpieces.push_back(g);

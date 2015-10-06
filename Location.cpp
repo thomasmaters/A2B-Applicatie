@@ -6,6 +6,9 @@
 
 #include "Location.hpp"
 
+#include "Place.hpp"
+#include "Junction.hpp"
+
 Location::Location():
 	Longitude(0),
 	Latitude(0)
@@ -13,6 +16,7 @@ Location::Location():
 }
 
 Location::Location(const Location& aLocation):
+	name(aLocation.name),
 	Longitude(aLocation.Longitude),
 	Latitude(aLocation.Latitude)
 {
@@ -20,6 +24,7 @@ Location::Location(const Location& aLocation):
 
 void Location::operator =(const Location& aLocation)
 {
+	name = aLocation.name,
 	Longitude = aLocation.Longitude;
 	Latitude = aLocation.Latitude;
 }
@@ -28,7 +33,8 @@ Location::~Location()
 {
 }
 
-Location::Location(double A, double B):
+Location::Location(std::string aName,double A, double B):
+	name(aName),
 	Longitude(A),
 	Latitude(B)
 {

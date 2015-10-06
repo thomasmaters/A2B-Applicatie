@@ -27,9 +27,12 @@ void Route::calculateRoute()
 		}
 	}
 
+	std::cout << "Uw route van " << startPoint.getName() <<  " naar " << endPoint.getName() << ":" << std::endl;
 	for(auto route : routes){
-		std::cout << "Verbindingsstukken reistijd :" << route.getTravelTime() << std::endl;
+		travelTime += route.getTravelTime();
+		std::cout << "U pakt het verbindingsstuk :" << route.getStartPoint().getName() << " - " << route.getEndPoint().getName() << " Met een totale reistijd van:" << route.getTravelTime() << " minuten met " << route.getAmountDelays() << " vertragingen." << std::endl ;
 	}
+	std::cout << "U bereikt uw bestemming in " << travelTime << " minuten." << std::endl;
 }
 
 Route::Route():
